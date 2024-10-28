@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "oneiros",
+	"version": "${version}",
+	"name": "oneiros",
+	"description": "All about dreams",
+	"authors": [
+		"Diferenciable"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/oneiros/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"oneiros.eres.Oneiros"
+		],
+		"fabric-datagen": [
+			"oneiros.eres.OneirosDataGenerator"
+		],
+		"client": [
+			"oneiros.eres.OneirosClient"
+		]
+	},
+	"mixins": [
+		"oneiros.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
